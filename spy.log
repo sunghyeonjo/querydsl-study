@@ -1,0 +1,16 @@
+1699870952199|1|statement|connection 1|url jdbc:h2:tcp://localhost/~/querydsl|     drop table if exists dummy_entity CASCADE |     drop table if exists dummy_entity CASCADE 
+1699870952200|0|statement|connection 1|url jdbc:h2:tcp://localhost/~/querydsl|     drop sequence if exists hibernate_sequence|     drop sequence if exists hibernate_sequence
+1699870952201|0|statement|connection 2|url jdbc:h2:tcp://localhost/~/querydsl|create sequence hibernate_sequence start with 1 increment by 1|create sequence hibernate_sequence start with 1 increment by 1
+1699870952204|2|statement|connection 2|url jdbc:h2:tcp://localhost/~/querydsl|     create table dummy_entity (        id bigint not null,         primary key (id)     )|     create table dummy_entity (        id bigint not null,         primary key (id)     )
+1699870952706|4|statement|connection 3|url jdbc:h2:tcp://localhost/~/querydsl|call next value for hibernate_sequence|call next value for hibernate_sequence
+1699870952797|0|statement|connection 3|url jdbc:h2:tcp://localhost/~/querydsl|insert into dummy_entity (id) values (?)|insert into dummy_entity (id) values (1)
+1699870952799|0|statement|connection 3|url jdbc:h2:tcp://localhost/~/querydsl|select dummyentit0_.id as id1_0_ from dummy_entity dummyentit0_|select dummyentit0_.id as id1_0_ from dummy_entity dummyentit0_
+1699870952826|0|rollback|connection 3|url jdbc:h2:tcp://localhost/~/querydsl||
+1699871045518|1|statement|connection 1|url jdbc:h2:tcp://localhost/~/querydsl|     drop table if exists dummy_entity CASCADE |     drop table if exists dummy_entity CASCADE 
+1699871045519|0|statement|connection 1|url jdbc:h2:tcp://localhost/~/querydsl|     drop sequence if exists hibernate_sequence|     drop sequence if exists hibernate_sequence
+1699871045523|3|statement|connection 2|url jdbc:h2:tcp://localhost/~/querydsl|create sequence hibernate_sequence start with 1 increment by 1|create sequence hibernate_sequence start with 1 increment by 1
+1699871045528|4|statement|connection 2|url jdbc:h2:tcp://localhost/~/querydsl|     create table dummy_entity (        id bigint not null,         primary key (id)     )|     create table dummy_entity (        id bigint not null,         primary key (id)     )
+1699871046048|4|statement|connection 3|url jdbc:h2:tcp://localhost/~/querydsl|call next value for hibernate_sequence|call next value for hibernate_sequence
+1699871046133|0|statement|connection 3|url jdbc:h2:tcp://localhost/~/querydsl|insert into dummy_entity (id) values (?)|insert into dummy_entity (id) values (1)
+1699871046135|0|statement|connection 3|url jdbc:h2:tcp://localhost/~/querydsl|select dummyentit0_.id as id1_0_ from dummy_entity dummyentit0_|select dummyentit0_.id as id1_0_ from dummy_entity dummyentit0_
+1699871046164|0|rollback|connection 3|url jdbc:h2:tcp://localhost/~/querydsl||
